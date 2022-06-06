@@ -1,7 +1,6 @@
 class CreateFilms < ActiveRecord::Migration[7.0]
   def change
     create_table :films do |t|
-      t.bigint :id
       t.jsonb :budget
       t.jsonb :description
       t.jsonb :external_ids
@@ -21,8 +20,6 @@ class CreateFilms < ActiveRecord::Migration[7.0]
       t.string :source_lang
       t.jsonb :title
       t.integer :year
-      t.datetime :created_at
-      t.datetime :updated_at
 
       t.timestamps
     end
