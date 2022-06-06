@@ -1,0 +1,127 @@
+<%= form_with(model: film) do |form| %>
+  <% if film.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(film.errors.count, "error") %> prohibited this film from being saved:</h2>
+
+      <ul>
+        <% film.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :id, style: "display: block" %>
+    <%= form.text_field :id %>
+  </div>
+
+  <div>
+    <%= form.label :budget, style: "display: block" %>
+    <%= form.text_field :budget %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :external_ids, style: "display: block" %>
+    <%= form.text_field :external_ids %>
+  </div>
+
+  <div>
+    <%= form.label :length, style: "display: block" %>
+    <%= form.text_field :length %>
+  </div>
+
+  <div>
+    <%= form.label :movie_type, style: "display: block" %>
+    <%= form.text_field :movie_type %>
+  </div>
+
+  <div>
+    <%= form.label :premiere_bluray, style: "display: block" %>
+    <%= form.date_field :premiere_bluray %>
+  </div>
+
+  <div>
+    <%= form.label :premiere_digital, style: "display: block" %>
+    <%= form.date_field :premiere_digital %>
+  </div>
+
+  <div>
+    <%= form.label :premiere_dvd, style: "display: block" %>
+    <%= form.date_field :premiere_dvd %>
+  </div>
+
+  <div>
+    <%= form.label :premiere_world, style: "display: block" %>
+    <%= form.date_field :premiere_world %>
+  </div>
+
+  <div>
+    <%= form.label :rating, style: "display: block" %>
+    <%= form.text_field :rating %>
+  </div>
+
+  <div>
+    <%= form.label :rating_age_limits, style: "display: block" %>
+    <%= form.number_field :rating_age_limits %>
+  </div>
+
+  <div>
+    <%= form.label :rating_mpaa, style: "display: block" %>
+    <%= form.text_field :rating_mpaa %>
+  </div>
+
+  <div>
+    <%= form.label :remote_images, style: "display: block" %>
+    <%= form.text_field :remote_images %>
+  </div>
+
+  <div>
+    <%= form.label :slogan, style: "display: block" %>
+    <%= form.text_field :slogan %>
+  </div>
+
+  <div>
+    <%= form.label :slug, style: "display: block" %>
+    <%= form.text_field :slug %>
+  </div>
+
+  <div>
+    <%= form.label :source, style: "display: block" %>
+    <%= form.text_field :source %>
+  </div>
+
+  <div>
+    <%= form.label :source_lang, style: "display: block" %>
+    <%= form.text_field :source_lang %>
+  </div>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :year, style: "display: block" %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div>
+    <%= form.label :created_at, style: "display: block" %>
+    <%= form.datetime_field :created_at %>
+  </div>
+
+  <div>
+    <%= form.label :updated_at, style: "display: block" %>
+    <%= form.datetime_field :updated_at %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
