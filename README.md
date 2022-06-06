@@ -1,24 +1,40 @@
-# README
+# SearchFlix
+SearchFlix is a movies database that demonstrates the power of ElasticSearch.
+## Built With
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby
+- Rails
+- PostgreSQL
+## Getting Started
 
-Things you may want to cover:
+To get a local copy up and running follow these simple example steps.
 
-* Ruby version
+Clone the repo with `https://github.com/koomekevo/SearchFlix.git`
 
-* System dependencies
+Run `bundle install` from the command line to install dependencies.
 
-* Configuration
+Run `rails db:setup` from the command line to set database and migrations.
 
-* Database creation
+Run `rails s` to run the local version
 
-* Database initialization
+Check your browser at `http://localhost:3000/`
+## Authors
 
-* How to run the test suite
+👤 **Kevin Koome**
 
-* Services (job queues, cache servers, search engines, etc.)
+- GitHub: [@koomekevo](https://github.com/koomekevo)
+- Twitter: [@koomekevo](https://twitter.com/koomekevo)
+- LinkedIn: [LinkedIn](https://ke.linkedin.com/in/kevin-koome-aab84186)
 
-* Deployment instructions
+## 🤝 Contributing
 
-* ...
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
