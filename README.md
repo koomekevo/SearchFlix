@@ -31,11 +31,6 @@ Check your browser at `http://localhost:3000/`
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
-
-## Acknowledgement
-
-- [Gregoire Vella](https://www.behance.net/gregoirevella) on Behance the author of the [original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
