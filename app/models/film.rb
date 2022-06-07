@@ -1,6 +1,8 @@
 class Film < ApplicationRecord
   include Searchable
 
+  searchkick
+
   def self.search(query)
     __elasticsearch__.search(
       {
