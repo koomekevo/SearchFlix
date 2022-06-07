@@ -3,7 +3,7 @@ class SearchController < ApplicationController
     @films = if params[:term].nil?
                []
              else
-               Film.search params[:term]
+               @films = Film.search params[:term]
              end
   end
 end
