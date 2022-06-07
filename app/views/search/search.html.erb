@@ -1,0 +1,16 @@
+<h2>Search Results for: <i><%= params[:term] %></i></h2>
+ 
+<% if @films %>
+<ul class="search_results">
+  <% @films.with_details.each do |film, details| %>
+    <li>
+      <h3>
+        <%= link_to film.title, controller: "films", action: "show", id: film.id %>
+      </h3>
+      <p><%= details[:highlight][:text].html_safe %>...</p>
+    </li>
+  <% end %>
+</ul>
+<% else %>
+  <p>Your search did not match any documents.</p>
+<% end %>

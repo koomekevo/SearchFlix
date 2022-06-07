@@ -15,10 +15,8 @@ class FilmsTest < ApplicationSystemTestCase
     click_on 'New film'
 
     fill_in 'Budget', with: @film.budget
-    fill_in 'Created at', with: @film.created_at
     fill_in 'Description', with: @film.description
     fill_in 'External ids', with: @film.external_ids
-    fill_in 'Id', with: @film.id
     fill_in 'Length', with: @film.length
     fill_in 'Movie type', with: @film.movie_type
     fill_in 'Premiere bluray', with: @film.premiere_bluray
@@ -34,7 +32,6 @@ class FilmsTest < ApplicationSystemTestCase
     fill_in 'Source', with: @film.source
     fill_in 'Source lang', with: @film.source_lang
     fill_in 'Title', with: @film.title
-    fill_in 'Updated at', with: @film.updated_at
     fill_in 'Year', with: @film.year
     click_on 'Create Film'
 
@@ -47,10 +44,8 @@ class FilmsTest < ApplicationSystemTestCase
     click_on 'Edit this film', match: :first
 
     fill_in 'Budget', with: @film.budget
-    fill_in 'Created at', with: @film.created_at
     fill_in 'Description', with: @film.description
     fill_in 'External ids', with: @film.external_ids
-    fill_in 'Id', with: @film.id
     fill_in 'Length', with: @film.length
     fill_in 'Movie type', with: @film.movie_type
     fill_in 'Premiere bluray', with: @film.premiere_bluray
@@ -66,7 +61,6 @@ class FilmsTest < ApplicationSystemTestCase
     fill_in 'Source', with: @film.source
     fill_in 'Source lang', with: @film.source_lang
     fill_in 'Title', with: @film.title
-    fill_in 'Updated at', with: @film.updated_at
     fill_in 'Year', with: @film.year
     click_on 'Update Film'
 
