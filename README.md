@@ -1,10 +1,12 @@
 # SearchFlix
 SearchFlix is a movies database that demonstrates the power of ElasticSearch.
+
 ## Built With
 
 - Ruby
 - Rails
 - PostgreSQL
+- Bootstrap
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
